@@ -1,0 +1,9 @@
+{
+    "database_info": [
+        {
+            "name": "original",
+            "prompt_template": "\"\"\"Based on the table schema below, write a SQL query that would answer the user's question. Provide relevant information such as totals and additional parenthesis around returned data where you can place less-human-readable data that relates to human-readable data of an equivalent value (Example: Put the customer name and then in parentheses their customer id ) :\n    {schema}\n\n    Question: {question}\n    SQL Query:\"\"\"",
+            "response_template": "\"\"\"Based on the table schema below, question, SQL query, and SQL response, write a natural language response:\n    {schema}\n\n    Question: {question}\n    SQL Query: {query}\n    SQL Response: {response}\"\"\""
+        }
+    ]
+}

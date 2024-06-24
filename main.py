@@ -1,3 +1,10 @@
+"""
+Credits:
+This project was started out heavily using code form the below tutorials
+- https://medium.com/@vchan444/get-started-with-llama-3-using-ollama-and-langchain-in-a-few-minutes-1e2b84c25f8b
+- https://alejandro-ao.com/chat-with-mysql-using-python-and-langchain/
+"""
+
 import os
 import json
 import re
@@ -10,9 +17,13 @@ from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 
 
 # Access to secrets
-json_file_path = r".secrets/sqlAccess.json"
-with open(json_file_path, "r") as f:
+secrets_json_file_path = r".secrets/sqlAccess.json"
+with open(secrets_json_file_path, "r") as f:
     sqlSecrets = json.load(f)
+
+# Get templates  # TODO: Access on demand instead of preloading all
+with open(r"templates.json", "r") as f:
+    templates = json.load(f)
 
 def get_schema(db):
     schema = db.get_table_info()
@@ -30,7 +41,15 @@ def extract_sql_query(text):
     else:
         return None
 
+def get_and_sanitize_user_input(question):
+    # TODO: Should I trim user input? Could be used to ask llm for formatting
+    # TODO: Add more sanitization
+    user_input = input(question)
+    user_input = user_input.strip()
+    return user_input
+
 def print_debugging_variables():
+    print()
     fields = [
         ("llm", llm_model_name),
         ("server path", sql_database_path),
@@ -39,11 +58,22 @@ def print_debugging_variables():
         ("sql password", sql_password),
     ]
 
-    print("\nVariables for debugging")
-    spacing_width = 20  # TODO: Make based on max field name length
+    # TODO: Make less repetitive
+    max_field_name_width = 0
+    max_field_value_width = 0
+    for field in fields:
+        max_field_name_width = max(max_field_name_width, len(field[0]))
+        max_field_value_width = max(max_field_value_width, len(field[1]))
+
+    divider_line = f"{'-' * (max_field_name_width + max_field_value_width + 5)}"
+    print(f"-{divider_line}-")
+    print(f"| Variables for debugging {' ' * (max_field_name_width + max_field_value_width - 20)}|")
+    print(f"|{divider_line}|")
+
     for field_name, field_value in fields:
-        print(f"{field_name} {'.' * (spacing_width - len(field_name))} {field_value}")
-    print("\n")
+        print(f"| {field_name} {'.' * (max_field_name_width - len(field_name))}: {field_value} {' ' * (max_field_value_width - len(field_value))}|")
+
+    print(f"-{divider_line}-\n")
 
 if __name__ == '__main__':
     # Setup Config
@@ -53,20 +83,24 @@ if __name__ == '__main__':
     sql_username      = sqlSecrets["read_only_username"]
     sql_password      = sqlSecrets["read_only_password"]
 
-
     print_debugging_variables()
+    llm = None
+    db = None
+
 
     # Setup
     llm = Ollama(model=llm_model_name)
     mysql_uri = f'mysql+mysqlconnector://{sql_username}:{sql_password}@{sql_database_path}/{database_name}'
     db = SQLDatabase.from_uri(mysql_uri)
 
-    template = """Based on the table schema below, write a SQL query that would answer the user's question:
-    {schema}
+    template = templates["database_info"][0]
 
-    Question: {question}
-    SQL Query:"""
-    prompt = ChatPromptTemplate.from_template(template)
+    # template = """Based on the table schema below, write a SQL query that would answer the user's question:
+    # {schema}
+    #
+    # Question: {question}
+    # SQL Query:"""
+    prompt = ChatPromptTemplate.from_template(template["prompt_template"])
 
     def add_schema(input_dict):
         input_dict['schema'] = get_schema(db)
@@ -84,7 +118,7 @@ if __name__ == '__main__':
             | StrOutputParser()
     )
 
-    user_question = 'Which customer has spent the most money?'
+    user_question = get_and_sanitize_user_input(f"Please enter your question about the database \"{database_name}\": ")
 
     print("Invoking llm....")
     llmResponse = sql_chain.invoke({"question": user_question})
@@ -99,13 +133,7 @@ if __name__ == '__main__':
     print("SQL Response: ", sql_response)
 
     # Creating the full chain
-    response_template = """Based on the table schema below, question, SQL query, and SQL response, write a natural language response:
-    {schema}
-
-    Question: {question}
-    SQL Query: {query}
-    SQL Response: {response}"""
-    response_prompt = ChatPromptTemplate.from_template(response_template)
+    response_prompt = ChatPromptTemplate.from_template(template["response_template"])
 
     def add_response_context(input_dict):
         input_dict['query'] = query
@@ -119,5 +147,6 @@ if __name__ == '__main__':
             | llm
     )
 
+    print("Invoking llm....")
     final_response = full_chain.invoke({"question": user_question})
     print("Final Response: ", final_response)
