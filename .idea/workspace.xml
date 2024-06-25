@@ -5,14 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="803fc34c-a4c9-4062-9ef6-00fff7126d3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GetstartedwithLlama3usingOllamaandLangChaininafewminutes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GetstartedwithLlama3usingOllamaandLangChaininafewminutes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/.env-example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/app/definitions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/app/functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/app/handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/FAQ/General.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/FAQ/Health.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/FAQ/Special.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/agents.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/api_functions.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/chains.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/chatgpt_plugins.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/custom_langchain.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/delete_outputs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/doctran.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/evaluation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/functions.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/indexes.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/install.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/install.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/langchain_expressions.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/memory.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/memorytest.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/models_basics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/models_prompts_parsers.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/open_source_chain.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,15 +63,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.huggingfacetest.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.newMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Volumes/AiAndStorage/AiProjects/GetstartedwithLlama3usingOllamaandLangChaininafewminutes/Langchain-Full-Course-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Langchain-Full-Course-main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.huggingfacetest">
+    <configuration name="huggingfacetest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GetstartedwithLlama3usingOllamaandLangChaininafewminutes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huggingfacetest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="GetstartedwithLlama3usingOllamaandLangChaininafewminutes" />
       <option name="ENV_FILES" value="" />
@@ -48,6 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -57,11 +135,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="newMain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GetstartedwithLlama3usingOllamaandLangChaininafewminutes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/newMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.huggingfacetest" />
+        <item itemvalue="Python.newMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
+        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
       </set>
     </attachedChunks>
   </component>
@@ -73,7 +181,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719178337487</updated>
+      <workItem from="1719282147471" duration="2722000" />
+      <workItem from="1719288132742" duration="1249000" />
+      <workItem from="1719289746321" duration="1615000" />
+      <workItem from="1719326369373" duration="5141000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GetstartedwithLlama3usingOllamaandLangChaininafewminutes$newMain.coverage" NAME="newMain Coverage Results" MODIFIED="1719329487136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetstartedwithLlama3usingOllamaandLangChaininafewminutes$main.coverage" NAME="main Coverage Results" MODIFIED="1719326577248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetstartedwithLlama3usingOllamaandLangChaininafewminutes$huggingfacetest.coverage" NAME="huggingfacetest Coverage Results" MODIFIED="1719329871965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
