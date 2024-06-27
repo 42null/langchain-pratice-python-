@@ -5,39 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="803fc34c-a4c9-4062-9ef6-00fff7126d3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GetstartedwithLlama3usingOllamaandLangChaininafewminutes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GetstartedwithLlama3usingOllamaandLangChaininafewminutes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helperFunctions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vectorstoreCreatorTool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/.env-example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/app/definitions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/app/functions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/app/handler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/API_Project/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/FAQ/General.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/FAQ/Health.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/FAQ/Special.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/agents.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/api_functions.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/chains.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/chatgpt_plugins.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/custom_langchain.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/delete_outputs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/doctran.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/evaluation.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/functions.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/indexes.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/install.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/install.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/langchain_expressions.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/memory.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/memorytest.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/models_basics.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/models_prompts_parsers.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/open_source_chain.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Langchain-Full-Course-main/requirements.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/remoteSqlQueryUsingLangchain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +42,7 @@
     "Python.newMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Volumes/AiAndStorage/AiProjects/GetstartedwithLlama3usingOllamaandLangChaininafewminutes/Langchain-Full-Course-main",
+    "last_opened_file_path": "/Volumes/AiAndStorage/AiProjects/GetstartedwithLlama3usingOllamaandLangChaininafewminutes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Langchain-Full-Course-main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -112,29 +85,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="GetstartedwithLlama3usingOllamaandLangChaininafewminutes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="newMain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GetstartedwithLlama3usingOllamaandLangChaininafewminutes" />
       <option name="ENV_FILES" value="" />
@@ -150,6 +100,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/newMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="remoteSqlQueryUsingLangchain" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="GetstartedwithLlama3usingOllamaandLangChaininafewminutes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remoteSqlQueryUsingLangchain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,7 +157,8 @@
       <workItem from="1719282147471" duration="2722000" />
       <workItem from="1719288132742" duration="1249000" />
       <workItem from="1719289746321" duration="1615000" />
-      <workItem from="1719326369373" duration="5141000" />
+      <workItem from="1719326369373" duration="5425000" />
+      <workItem from="1719461039287" duration="662000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,8 @@ import os
 import json
 import re
 
+from helperFunctions import print_debugging_variables
+
 from langchain_community.llms import Ollama
 from langchain_community.utilities import SQLDatabase
 from langchain_core.prompts import ChatPromptTemplate
@@ -48,32 +50,7 @@ def get_and_sanitize_user_input(question):
     user_input = user_input.strip()
     return user_input
 
-def print_debugging_variables():
-    print()
-    fields = [
-        ("llm", llm_model_name),
-        ("server path", sql_database_path),
-        ("database", database_name),
-        ("sql username", sql_username),
-        ("sql password", sql_password),
-    ]
 
-    # TODO: Make less repetitive
-    max_field_name_width = 0
-    max_field_value_width = 0
-    for field in fields:
-        max_field_name_width = max(max_field_name_width, len(field[0]))
-        max_field_value_width = max(max_field_value_width, len(field[1]))
-
-    divider_line = f"{'-' * (max_field_name_width + max_field_value_width + 5)}"
-    print(f"-{divider_line}-")
-    print(f"| Variables for debugging {' ' * (max_field_name_width + max_field_value_width - 20)}|")
-    print(f"|{divider_line}|")
-
-    for field_name, field_value in fields:
-        print(f"| {field_name} {'.' * (max_field_name_width - len(field_name))}: {field_value} {' ' * (max_field_value_width - len(field_value))}|")
-
-    print(f"-{divider_line}-\n")
 
 if __name__ == '__main__':
     # Setup Config
@@ -83,7 +60,14 @@ if __name__ == '__main__':
     sql_username      = sqlSecrets["read_only_username"]
     sql_password      = sqlSecrets["read_only_password"]
 
-    print_debugging_variables()
+    fields = [
+            ("llm", llm_model_name),
+            ("server path", sql_database_path),
+            ("database", database_name),
+            ("sql username", sql_username),
+            ("sql password", sql_password),
+        ]
+    print_debugging_variables(fields)
     llm = None
     db = None
 
